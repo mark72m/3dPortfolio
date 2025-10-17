@@ -2,9 +2,11 @@ import React from 'react'
 
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <main>
+      <div>
+        <h1>Wlecome to the real Portfolio</h1>
+      </div>
+    </main>
   )
 }
 
