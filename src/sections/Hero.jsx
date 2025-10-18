@@ -1,9 +1,5 @@
 import React from 'react'
-
-const words = [
-    { text: 'Ideas', imgPath: '/images/ideas.svg'},
-    { text: 'Concepts', imgPath: '/images/concepts.svg'},
-];
+import { words } from '../constants/index.js'
 const Hero = () => {
     return (
         <section id="hero" className='relative overflow-hidden'>
@@ -24,7 +20,9 @@ const Hero = () => {
                                                 <img 
                                                 src={word.imgPath}
                                                 alt={word.text}
-                                                className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full gap-1 pb-2'/>
+                                                className='xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-white-50'/>
+
+                                                <span>{word.text}</span>
                                             </span>
                                         ))}
 
